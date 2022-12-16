@@ -5,6 +5,8 @@ namespace Cadastro_Clientes
         //Atributos da pessoa física
         public string cpf {get; set;}
         public string rg {get; set;}
+        public string data_nascimento {get; set;}
+
 
 
 
