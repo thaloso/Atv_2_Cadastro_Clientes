@@ -4,7 +4,7 @@ namespace Cadastro_Clientes
     {
         //Atributos para pessoa jurídica
         public string cnpj {get; set;}
-        public string ie {get; set;}
+        
 
         //Método do pagamento te imposto para pessoa jurídica
         
