@@ -55,8 +55,11 @@ namespace Cadastro_Clientes
                     
 
                     //Definição do método para escrita dos dados no arquivo .txt
-                    using (StreamWriter sw = new StreamWriter(texto)) 
-                    {
+                    using (StreamWriter sw = new StreamWriter(texto, true)) //foi adicionado o true para que o programa crie uma nova linha
+                                                                            //ao inves de substituir a linha existente. Solucionando o problema
+                                                                            //de não salvar os dados em sequencia que estava acontecendo.
+                    
+                    {                                                       
                         sw.WriteLine("Pessoa Física"+separador+pf.nome+separador+pf.cpf+separador+pf.data_nascimento+separador+
                         pf.valor.ToString("C")+separador+pf.valor_imposto.ToString("C")+separador+pf.total.ToString("C"));
                         
@@ -87,10 +90,10 @@ namespace Cadastro_Clientes
                     
 
                     //Definição do método para escrita dos dados no arquivo .txt
-                    using (StreamWriter sw = new StreamWriter(texto)) 
+                    using (StreamWriter sw = new StreamWriter(texto,true)) 
                     {
                         
-                        sw.WriteLine("Pessoa Física"+separador+pj.nome+separador+pj.cnpj+separador+
+                        sw.WriteLine("Pessoa Jurídica"+separador+pj.nome+separador+pj.cnpj+separador+ //Modificado o tipo de cliente que havia esquecido
                         pj.valor.ToString("C")+separador+pj.valor_imposto.ToString("C")+separador+pj.total.ToString("C"));
                         
                     }
