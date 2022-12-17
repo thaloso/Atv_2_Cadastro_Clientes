@@ -28,6 +28,17 @@ namespace Cadastro_Clientes
                 Console.WriteLine("Digite a data de Nascimento:");
                 string var_nascimento = Console.ReadLine();
                 pf.data_nascimento = var_nascimento;
+                Console.WriteLine("Valor da compra:");
+                val_pag = float.Parse(Console.ReadLine());
+                pf.Pagar_Imposto(val_pag);
+                Console.WriteLine("--------- Pessoa Física ---------");
+                Console.WriteLine("Nome...............: " + pf.nome);
+                Console.WriteLine("CPF................: " + pf.cpf);
+                Console.WriteLine("Data de Nascimento.: " + pf.data_nascimento);
+                Console.WriteLine("Valor de Compra....: " + pf.valor.ToString("C"));
+                Console.WriteLine("Valor do Imposto...: " + pf.valor_imposto.ToString("C"));
+                Console.WriteLine("Total a Pagar......: " + pf.total.ToString("C"));
+                
                 break;
             }
             
