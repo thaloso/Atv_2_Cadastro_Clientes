@@ -10,10 +10,10 @@ namespace Cadastro_Clientes
         
         public override void Pagar_Imposto (float v)
         {
-            //override define que o método pagar_imposto irá reescrever caso o cliente seja pessoa jurídica
+            //override muda o método de cálculo que pagar_imposto irá escrever caso o cliente seja pessoa jurídica
             this.valor = v;
-            this.valor_imposto = this.valor * 20/100;
-            this.total = this.valor + this.valor_imposto;
+            this.valor_imposto = this.valor * 20/100; //Cálculo do valor do imposto para Pessoa Jurídica
+            this.total = this.valor + this.valor_imposto; //Cálculo do valor total do produto
 
         }
 
