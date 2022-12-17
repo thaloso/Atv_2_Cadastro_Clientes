@@ -1,1 +1,5 @@
 Pessoa Física;thales;12345678900;06/11/1993;R$ 2.540,00;R$ 254,00;R$ 2.794,00
+Pessoa Física;chico junior;32568974111;15/12/1995;R$ 100,00;R$ 10,00;R$ 110,00
+Pessoa Jurídica;metalurgica do povo;99.999.999/0001-99;R$ 52.000,35;R$ 10.400,07;R$ 62.400,42
+Pessoa Jurídica;universo fotografias;12.345.678/0001-90;R$ 21.735,89;R$ 4.347,18;R$ 26.083,07
+Pessoa Física;fabio de jesus;789.456.123-01;31/01/2000;R$ 153,00;R$ 15,30;R$ 168,30
